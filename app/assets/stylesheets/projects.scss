@@ -1,6 +1,6 @@
 .foto-tarjeta{
-	width:100%;
-	height: 300px;
+	width: 20%;
+	height: 100px;
 }
 
 .tarjeta{
@@ -24,6 +24,15 @@
 
 .hiddenElement{
     display: none;
+}
+
+.hot-project {
+    width: 34%;
+}
+
+.image-hot-project{
+    text-align: center; 
+    margin-top: 30px;
 }
 
 .dark-primary-color    { background: #795548; }
