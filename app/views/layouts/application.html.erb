@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProjectDen</title>
+    <title>Project Den</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Iceland|Roboto:400,700,900" %>
   </head>
 
   <body>
+    <%= render "layouts/navbar" %>
     <%= yield %>
   </body>
 </html>

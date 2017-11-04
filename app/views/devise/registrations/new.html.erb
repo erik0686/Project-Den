@@ -1,0 +1,32 @@
+<div class="main-container">
+  <header class="login-header align-flex">
+    <h1 class="project-title">Registration</h1>
+  </header>
+  <div class="signin-container align-flex">
+    <div class="text-left">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+        <div class="align-flex signin-container">
+
+          <div class="field">
+            <%= f.label :email, class: "main-label" %><br />
+            <%= f.email_field :email, autofocus: true, class: "input-field" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password, class: "main-label" %><br />
+            <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "off", class: "input-field" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Sign up", class: "button main-button" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
