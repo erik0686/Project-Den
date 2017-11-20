@@ -1,7 +1,8 @@
 <div class="image-hot-project">
-  <%= image_tag("projectos_hot.png", class: "hot-project") %>
+  <%= image_tag("proyect_o.png", class: "hot-project") %>
 </div>
 <div class="row">
+<<<<<<< HEAD
   <div class="align-flex signin-container newprojectimage">
     <%= image_tag("index-background.png", class: "imagenprinc2") %>
   </div>
@@ -39,5 +40,44 @@
       <br>
     <% end %>
   </div>
+=======
+        <span style="float:left;width: 50%;">
+        	<div class="align-flex signin-container newprojectimage" style="float: left; display:inline-block">
+				<%= image_tag("index-background.png", class: "imagenprinc2") %>
+			</div>
+		</span>
+        <div style="float: right">
+            <form>
+            	<font size="5">
+            	Nombre del Proyecto:<br>
+  				<input type="text" name="proname">
+  				<br>
+  				Capacidad Máxima:<br>
+  				<input type="text" name="capamax">
+  				<br>
+  				Descripción:<br>
+  				<textarea rows="4" cols="40"></textarea>
+  				<br>
+  				Status:<br>
+  				<select>
+				  <option value="open">Abierto</option>
+				  <option value="oncourse">En Curso</option>
+				  <option value="close">Cerrado</option>
+				</select>
+				<br>
+				Fecha de Inicio:<br>
+  				<input type="date" name="fechainic">
+  				<br>
+  				Fecha de Clausura:<br>
+  				<input type="date" name="fechafin">
+  				<br>
+  				Perfil de los Miembros Deseados:<br>
+  				<textarea rows="4" cols="40"></textarea>
+  				<br>
+  			</font>
+            </form>
+            <button style="height:50px;width:100px;background-color: #4CAF50; color: white;display: inline-block;font-size: 16px;margin: 4px 2px" type="button">Registrar</button>
+        </div>
+>>>>>>> 6612a1f57385fcc2c6d719b573fd5c8ea23051fa
 </div>
 
