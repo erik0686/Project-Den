@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     initMap();
 });
 
@@ -39,4 +39,7 @@ function initMap(){
     }
     
     
-}
+}*/
+$(document).ready(function(){
+    console.log("jala");
+});
