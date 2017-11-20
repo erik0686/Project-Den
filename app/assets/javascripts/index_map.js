@@ -1,10 +1,11 @@
-/*$(document).ready(function(){
-    initMap();
+$(document).ready(function(){
+    
+    initMap(); 
 });
 
 function initMap(){
     var MEX = {lat: 23.4326, lng: -99.1332};
-    var map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(document.getElementById('mapa'), {
         zoom: 5,
         center: MEX		
     });
@@ -22,7 +23,7 @@ function initMap(){
     nacArray[0] = "3";
     nacArray[1] = "14";
     nacArray[2] = "6";
-    nacArray[3] = " ";
+    nacArray[3] = "4";
     nacArray[4] = "8";
     nacArray[5] = "43";
     nacArray[6] = "31";
@@ -39,7 +40,4 @@ function initMap(){
     }
     
     
-}*/
-$(document).ready(function(){
-    console.log("jala");
-});
+}
