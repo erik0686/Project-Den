@@ -10,8 +10,11 @@
     </ul>
       
     <ul id="LogButtons" class="nav navbar-nav navbar-right">
-         <li><a class="navbar-buttons" href="register.html"><span class="glyphicon glyphicon-user"></span> Crear cuenta</a></li>
-       <li><a class="navbar-buttons" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
+       <li><a class="navbar-buttons"><span class="glyphicon glyphicon-user"></span> <%= current_user.email %></a></li>
+       <li><%= link_to destroy_user_session_path, class: "navbar-buttons", method: 'delete'  do %>
+         <span class="glyphicon glyphicon-user">Logout</span>
+         <% end %>
+       </li>
     </ul>
   </div>
 </nav>

@@ -6,6 +6,5 @@ class User < ApplicationRecord
 
   has_many :projects, through: :project_users
   has_many :tags, through: :user_tags
-  belongs_to :location
   
 end
