@@ -10,6 +10,7 @@
     </ul>
       
     <ul id="LogButtons" class="nav navbar-nav navbar-right">
+      <li><%= link_to "Crear Proyecto", new_project_path, class: "navbar-buttons"%></li>
        <li><a class="navbar-buttons"><span class="glyphicon glyphicon-user"></span> <%= current_user.email %></a></li>
        <li><%= link_to destroy_user_session_path, class: "navbar-buttons", method: 'delete'  do %>
          <span class="glyphicon glyphicon-user">Logout</span>
