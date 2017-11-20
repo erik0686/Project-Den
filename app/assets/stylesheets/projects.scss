@@ -250,11 +250,23 @@ html, body{
 .newprojectform{
     display: inline;
     position: relative;
+    float:right;
+    margin-right: 10rem;
 }
 .newprojectimage{
     display: inline;
     position: relative;
-    float: left;
+}
 .card-container{
     display: inline;
+}
+
+.create-project{
+    height:50px;
+    width:100px;
+    background-color: #4CAF50; 
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
 }
