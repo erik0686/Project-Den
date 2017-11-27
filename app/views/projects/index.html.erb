@@ -19,18 +19,21 @@
             <% end %>
           </div>
           <div class="card-action">
-            <a data-toggle="modal" data-target="#paginaweb" href="#">Conoce mas</a>
+            <a href="#">Conoce mas</a>
           </div>
         </div>
       </div>
-    <%= link_to "Inscribirse", {controller: "project_user", action: "create",  user_id: current_user.id,  project_id: project.id}, method: "post" %>
+    <%= link_to "Inscribirse", {controller: "project_user", action: "create",  user_id: current_user.id,  project_id: project.id}, method: "post", class: "Inscripcion" %>
     </div>
   <% end %>
 
 </div>
 
 
+
 <div id="mapa" style="height: 100%; background-color:green"></div>
+
+
 
 <footer style="margin-top: 40px">
   <div class="container text-center">
