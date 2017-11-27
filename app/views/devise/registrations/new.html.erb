@@ -1,6 +1,7 @@
+<%= image_tag("project_logo.png", class: "project_logo") %>
 <div class="main-container">
   <header class="login-header align-flex">
-    <h1 class="project-title">Registro</h1>
+    <h1 class="project-title"><b>Regístrate</b></h1>
   </header>
   <div class="signin-container align-flex">
     <div class="text-left">
@@ -9,20 +10,17 @@
         <div class="align-flex signin-container">
 
           <div class="field">
-            <%= f.label :email, class: "main-label" %><br />
-            <%= f.email_field :email, autofocus: true, class: "input-field" %>
+            <%= f.text_field :email, autofocus: true, class: "input-field", placeholder:"E-mail" %>
           </div>
 
           <div class="field">
-            <%= f.label :password, class: "main-label" %><br />
-            <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "off", class: "input-field" %>
+            <%= f.password_field :password, autocomplete: "off", class: "input-field", placeholder:"Contraseña" %>
           </div>
+          <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> caracteres mínimo)</em>
+            <% end %><br /> 
           <div class="field">
-            <%= f.label :password_confirmation, class: "main-label" %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "off", class: "input-field" %>
+            <%= f.password_field :password_confirmation, autocomplete: "off", class: "input-field", placeholder:"Confirmar contraseña" %>
           </div>
 
           <div class="actions">
@@ -33,4 +31,4 @@
     </div>
   </div>
 </div>
-
+<%= link_to "¿Ya tienes cuenta? Inicia sesión aquí", new_user_session_path, class: "IniciarSes" %>
