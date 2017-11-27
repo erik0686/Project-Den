@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   devise_for :users
   resources :projects
+  resources :project_user
 
 
   devise_scope :user do
