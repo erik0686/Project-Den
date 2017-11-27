@@ -1,18 +1,17 @@
+<%= image_tag("project_logo.png", class: "project_logo") %>
 <div class="main-container">
   <header class="login-header align-flex">
-    <h1 class="project-title">The Project Den</h1>
+    <h1 class="project-title"><b>¡Bienvenido!</b></h1>
   </header>
   <div class="signin-container align-flex">
     <div class="text-left">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="align-flex signin-container">
           <div class="field">
-            <%= f.label :email, class: "main-label" %><br />
-            <%= f.email_field :email, autofocus: true, class: "input-field" %>
+            <%= f.text_field :email, autofocus: true, class: "input-field", placeholder:"E-mail" %>
           </div>
           <div class="field">
-            <%= f.label :password, class: "main-label" %><br />
-            <%= f.password_field :password, autocomplete: "off", class: "input-field" %>
+            <%= f.password_field :password, autocomplete: "off", class: "password-field", placeholder:"Contraseña" %>
           </div>
           <% if devise_mapping.rememberable? -%>
             <div class="field check">
@@ -28,5 +27,4 @@
     </div>
   </div>
 </div>
-
-<%= render "devise/shared/links" %>
+<%= link_to "Crea una cuenta", new_user_registration_path, class: "Registration" %>
