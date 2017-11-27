@@ -270,3 +270,38 @@ html, body{
     font-size: 16px;
     margin: 4px 2px;
 }
+
+
+/************************
+Estilos para la seccion de proyectos.
+************************/
+
+.row {
+    
+}
+
+.col-proyecto {
+    float: center;
+    width : 40%;
+    margin-left: 30%;
+    border:1px solid black;
+    padding: 10px;
+}
+
+#nombreProy {
+    color: black;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.contProy {
+    color: black;
+    margin-top: 45px;
+    font-size: 1.7em;
+}
+
+.descProy {
+    color: #757575;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
