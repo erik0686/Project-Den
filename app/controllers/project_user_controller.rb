@@ -7,11 +7,10 @@ class ProjectUserController < ApplicationController
 		@project_user = ProjectUser.new
     @project_user.user_id = params[:user_id]
     @project_user.project_id = params[:project_id]
-    binding.pry
 		if @project_user.save
 			redirect_to projects_path
 		else
-			render 'new'
+			render "new"
 		end
 	end
 

@@ -246,12 +246,13 @@ html, body{
 }
 .imagenprinc2 {
     width: 50%;
+    margin-left: 3rem;
 }
 .newprojectform{
     display: inline;
     position: relative;
     float:right;
-    margin-right: 10rem;
+    margin-right: 14rem;
 }
 .newprojectimage{
     display: inline;
@@ -269,4 +270,8 @@ html, body{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+}
+
+.seccion{
+    margin-top: 2rem;
 }

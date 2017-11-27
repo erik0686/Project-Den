@@ -11,27 +11,27 @@
       <%= f.text_field :name %> 
       <br>
 
-      <div> <%= f.label :Capacidad_Máxima %> </div>
+      <div class="seccion"> <%= f.label :Capacidad_Máxima %> </div>
       <%= f.number_field :max_capacity %> 
       <br>
 
-      <div> <%= f.label :Descripción %> </div>
+      <div class="seccion"> <%= f.label :Descripción %> </div>
       <%= f.text_area :description, rows: 4, cols: 50 %> 
       <br>
 
-      <div> <%= f.label :Status %> </div>
+      <div class="seccion"> <%= f.label :Status %> </div>
       <%= f.select :description, status_combo %> 
       <br>
 
-      <div> <%= f.label :Fecha_de_inicio %> </div>
+      <div class="seccion"> <%= f.label :Fecha_de_inicio %> </div>
       <%= f.date_select :start_date %> 
       <br>
 
-      <div> <%= f.label :Fecha_de_fin %> </div>
+      <div class="seccion"> <%= f.label :Fecha_de_fin %> </div>
       <%= f.date_select :end_date %> 
       <br>
       
-      <div> <%= f.label :Perfil_deseado_de_los_miembros %> </div>
+      <div class="seccion"> <%= f.label :Perfil_deseado_de_los_miembros %> </div>
       <%= f.text_area :description, rows: 4, cols: 50 %> 
       <br>
 
