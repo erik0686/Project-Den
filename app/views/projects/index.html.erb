@@ -23,8 +23,10 @@
           </div>
         </div>
       </div>
+    <%= link_to "Inscribirse", {controller: "project_user", action: "create",  user_id: current_user.id,  project_id: project.id}, method: "post" %>
     </div>
   <% end %>
+
 </div>
 
 
