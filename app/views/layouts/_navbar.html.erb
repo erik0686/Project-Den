@@ -3,14 +3,14 @@
     <div class="navbar-header">
     </div>
     <ul class="nav navbar-nav">
-      <li class="navbar-text"><b>HOME</b></li>
+      <li><%= link_to "Inicio", projects_path, class: "navbar-buttons"%></li>
     </ul>
       
     <ul id="LogButtons" class="nav navbar-nav navbar-right">
       <li><%= link_to "Crear Proyecto", new_project_path, class: "navbar-buttons"%></li>
        <li><a class="navbar-buttons"><span class="glyphicon glyphicon-user"></span> <%= current_user.email %></a></li>
        <li><%= link_to destroy_user_session_path, class: "navbar-buttons", method: 'delete'  do %>
-         <span class="glyphicon glyphicon-user">Logout</span>
+        <span class="glyphicon glyphicon-log-out"></span> Salir</span>
          <% end %>
        </li>
     </ul>

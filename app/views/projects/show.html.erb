@@ -1,17 +1,17 @@
 <div>
-  <div> Nombre del Proyecto</div>
-  <div><%= @project.name %></div>
-  <div> Capacidad del proyecto</div>
-  <div><%= @project.max_capacity %></div>
-  <div> Descripcion del proyecto</div>
-  <div><%= @project.description %></div>
-  <div> Fecha de inicio del Proyecto</div>
-  <div><%= @project.start_date %></div>
-  <div> Fecha del fin del Proyecto</div>
-  <div><%= @project.end_date %></div>
-  <div> Perfil deseado del participante </div>
-  <div><%= @project.profile %></div>
-
-
-
+    <h1 style="text-align: center; margin-bottom: 60px"><b>Descripcion del proyecto</b></h1>
+    <!--Columna de contenido-->
+    <div class="col-proyecto">
+      <div id="nombreProy"><%= @project.name %></div>
+      <div class="contProy"> Capacidad del proyecto:</div>
+      <div class="descProy"><%= @project.max_capacity %> personas</div>
+      <div class="contProy"> Descripcion del proyecto:</div>
+      <div class="descProy"><%= @project.description %></div>
+      <div class="contProy"> Fecha de inicio del Proyecto:</div>
+      <div class="descProy"><%= @project.start_date %></div>
+      <div class="contProy"> Fecha del fin del Proyecto:</div>
+      <div class="descProy"><%= @project.end_date %></div>
+      <div class="contProy"> Perfil deseado del participante:</div>
+      <div class="descProy"><%= @project.profile %></div>
+    </div>
 </div>
