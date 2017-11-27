@@ -12,7 +12,7 @@ body {
   margin: auto;
   border-radius: px-to-rems(24);
   padding: 0 px-to-rems(80);
-  background-color: lightblue;
+  background-color: white;
   width: 30%;
   margin-top: 5rem;
 }
@@ -108,4 +108,19 @@ input.main-button {
   margin-right: px-to-rems(5);
   padding-top: px-to-rems(16);
   width: auto;
+}
+.Registration {
+  position: relative;
+  left: 86.5rem;
+  margin-top: 20px;
+}
+.IniciarSes {
+  position: relative;
+  left: 80rem;
+  margin-top: 30px;
+}
+.project_logo {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
 }
