@@ -8,19 +8,19 @@
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="align-flex signin-container">
           <div class="field">
-            <%= f.text_field :email, autofocus: true, class: "input-field", placeholder:"E-mail" %>
+            <%= f.text_field :email, autofocus: true, class: "input-field", placeholder:"Correo" %>
           </div>
           <div class="field">
-            <%= f.password_field :password, autocomplete: "off", class: "password-field", placeholder:"Contraseña" %>
+            <%= f.password_field :password, autocomplete: "off", class: "input-field password-field", placeholder:"Contraseña" %>
           </div>
           <% if devise_mapping.rememberable? -%>
             <div class="field check">
               <%= f.check_box :remember_me, class: "check" %>
-              <%= f.label :remember_me, class: "main-label" %>
+              <%= f.label :recuerdame, class: "main-label" %>
             </div>
           <% end -%>
           <div class="actions">
-            <%= f.submit "Log in", class: "button main-button" %>
+            <%= f.submit "Iniciar sesión", class: "button main-button" %>
           </div>
         </div>
       <% end %>

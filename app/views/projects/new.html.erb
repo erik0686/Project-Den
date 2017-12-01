@@ -5,10 +5,11 @@
   <div class="align-flex signin-container newprojectimage">
     <%= image_tag("index-background.png", class: "imagenprinc2") %>
   </div>
+  
   <div class="newprojectform">
     <%= form_for @project do |f| %>
       <div> <%= f.label :Nombre_del_proyecto %> </div>
-      <%= f.text_field :name %> 
+      <%= f.text_field :name, class: 'nameinput' %> 
       <br>
 
       <div class="seccion"> <%= f.label :Capacidad_Máxima %> </div>
@@ -35,7 +36,7 @@
       <%= f.text_area :description, rows: 4, cols: 50 %> 
       <br>
 
-      <div> <%= f.submit "Crear", class: "create-project" %> </div>
+      <div style="text-align:center"> <%= f.submit "Crear", class: "create-project" %> </div>
       <br>
     <% end %>
   </div>

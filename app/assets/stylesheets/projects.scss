@@ -49,9 +49,9 @@
 .secondary-text-color  { color: #757575; }
 .divider-color         { background-color: #BDBDBD; }
 
-/******************************
+/**********
 FOOTER
-******************************/
+**********/
 
 footer {
     font-size: 80%;
@@ -93,9 +93,9 @@ footer {
 }
 
 
-/******************************
+/**********
 SUBNAV ENCUENTRA
-******************************/
+**********/
 
 #subnav{
     padding-top: 10px;
@@ -129,9 +129,9 @@ SUBNAV ENCUENTRA
     display: none;
 }
 
-/******************************
+/**********
 LISTA ENCUENTRA 
-******************************/
+**********/
 
 #lista{
     height: 100%;
@@ -190,9 +190,9 @@ LISTA ENCUENTRA
 }
 
 
-/******************************
+/**********
 CARRUSEL
-******************************/
+**********/
 
 #myCarousel{
     height: 100vh;
@@ -245,13 +245,14 @@ html, body{
     width: 100%;
 }
 .imagenprinc2 {
-    width: 50%;
+    width: 60%;
+    margin-left: 3rem;
 }
 .newprojectform{
     display: inline;
     position: relative;
-    float:right;
-    margin-right: 10rem;
+    float: right;
+    margin-right: 10%;
 }
 .newprojectimage{
     display: inline;
@@ -271,14 +272,14 @@ html, body{
     margin: 4px 2px;
 }
 
+.seccion{
+    margin-top: 2rem;
+}
+
 
 /************************
 Estilos para la seccion de proyectos.
 ************************/
-
-.row {
-    
-}
 
 .col-proyecto {
     float: center;
