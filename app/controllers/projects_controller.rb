@@ -5,6 +5,7 @@ class ProjectsController < ApplicationController
 
 	def create
 		@project = Project.new(project_params)
+		@project.user_id = current_user.id
 		if @project.save
 			redirect_to projects_path
 		else
@@ -47,6 +48,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :max_capacity, :capacity, :status, :start_date, :end_date, :profile)
+    params.require(:project).permit(:name, :max_capacity, :capacity, :status, :start_date, :end_date, :profile, :user_id, :description)
   end
 end

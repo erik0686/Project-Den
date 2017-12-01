@@ -9,7 +9,7 @@
     <ul id="LogButtons" class="nav navbar-nav navbar-right">
       <li><%= link_to "Crear Proyecto", new_project_path, class: "navbar-buttons"%></li>
       <li><%= link_to user_path(current_user.id), class: "navbar-buttons" do %>
-        <span class="glyphicon glyphicon-user"></span> <%= current_user.email %></span>
+        <span class="glyphicon glyphicon-user"></span> <%= current_user.name %></span>
          <% end %>
        </li>
 

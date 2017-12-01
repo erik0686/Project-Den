@@ -1,5 +1,38 @@
-<div>
-	<div>
-		<%= @user.email %>
-	</div>
+<div class="userinfo">
+  <div class="row">
+    <div class="small-4 columns">
+      <div class="photo"><img src="http://api.randomuser.me/portraits/men/15.jpg" alt="user photo" /></div>
+    </div>
+    <div class="small-8 columns info">
+      <h2><%= @user.name %></h4>
+      <p><%= @user.email %></p>
+      <p><em><i class="fa fa-map-marker"></i> <%= @user.contact_info %></em></p> 
+    </div>
+    <div class="project-width"><h4>Proyectos a los que estas inscrito</h4></div>
+    <% @user.projects.each do |p| %>
+      <div class="one-project">
+        <div class="project-width"><h6> <%= p.name %> </h6></div>
+        <div class="small-12 columns about">
+            <p><%= p.description %></p>
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>  
+    <% end %>
+    <div class="project-width"><h4>Proyectos que has creado</h4></div>
+    <% @user.personal_projects.each do |p| %>
+      <div class="one-project">
+        <div class="project-width"><h6> <%= p.name %> </h6></div>
+        <div class="small-12 columns about">
+            <p><%= p.description %></p>
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div> 
+    <% end %>
+  </div>
 </div>

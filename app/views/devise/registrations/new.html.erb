@@ -14,6 +14,10 @@
           </div>
 
           <div class="field">
+            <%= f.text_field :name, class: "input-field", placeholder:"Nombre completo" %>
+          </div>
+
+          <div class="field">
             <%= f.password_field :password, autocomplete: "off", class: "input-field", placeholder:"Contraseña" %>
           </div>
           <% if @minimum_password_length %>
