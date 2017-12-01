@@ -13,5 +13,9 @@
       <div class="descProy"><%= @project.end_date %></div>
       <div class="contProy"> Perfil deseado del participante:</div>
       <div class="descProy"><%= @project.profile %></div>
+      <div class="contProy"> Personas inscritas</div>
+      <% @project.users.each do |user| %>
+        <div class="descProy"><%= user.name %></div>
+      <% end %>
     </div>
 </div>

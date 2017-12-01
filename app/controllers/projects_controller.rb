@@ -14,8 +14,9 @@ class ProjectsController < ApplicationController
 	end
 
 	def index
-		@projects = Project.all
 		@project_user = ProjectUser.new
+		@q = Project.ransack(params[:q])
+  	@projects = @q.result(distinct: true)
 	end
 
 	def show
