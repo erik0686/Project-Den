@@ -1,13 +1,22 @@
 $(document).ready(function(){
-    
-    initMap(); 
+    if($("#mapa").length > 0)
+    {
+        initMap();
+    } 
+
+    if($(".body-user").length > 0)
+    {
+      $(".body-user").parent().css( "background", "url('https://3.bp.blogspot.com/-GQrh_DkKVnA/UHrY9Koue-I/AAAAAAAAFcM/8yAos9_5wpU/s1600/pp_sky.png')" )
+    } 
 });
+
+
 
 function initMap(){
     var MEX = {lat: 23.4326, lng: -99.1332};
     var map = new google.maps.Map(document.getElementById('mapa'), {
         zoom: 5,
-        center: MEX		
+        center: MEX   
     });
 
     var Locations = [];

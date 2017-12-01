@@ -1,0 +1,91 @@
+.user-title{
+	margin-left: 5rem;
+}
+
+.project-width{
+	padding: 30px;
+}
+
+.one-project{
+	box-shadow: 0px 0px 5px #000;
+	max-width: 300px;
+	margin-left: 3.5rem;
+}
+
+
+
+p, h4{
+  margin: 0;
+}
+
+body{
+  font-family: 'roboto';
+}
+  
+.userinfo{ 
+  background: #fff;
+  border: 1px solid #eee;
+  max-width: 350px;
+  margin: 100px auto;
+  padding-bottom: 3rem;
+
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #000;
+
+  .row{
+    .columns{
+      padding: 0 30px;
+
+      .photo{
+      	margin-top: 2rem; 
+        border-radius: 50%;
+        overflow: hidden;
+        height: 85px;
+        width: 85px;
+      }
+      &.info{
+        position: relative;
+        padding-top: 25px;
+        h4{
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 0px;
+        }
+        p{
+          font-size: 12px;
+          color: #222;
+          font-weight: 200;
+          em{
+            color: #7f7f7f;
+            font-size: 10px;
+          }
+        }
+        a.edit{
+          position: absolute;
+          right: 10px;
+          font-size: 12px;
+        }
+
+       }
+      &.about{
+        p{
+          font-size: 12px;
+          font-weight: 300;
+        }
+        ul{
+          list-style: none;
+          margin: 2px 0 0 0;
+          display: block;
+          text-align: center;          
+          li{            
+            display: inline-block;
+            margin-right: 5px;
+            a{
+              color: #777;             
+            }
+          }
+        }
+      }
+    }
+  }
+}
