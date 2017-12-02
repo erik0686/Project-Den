@@ -5,6 +5,8 @@
       <div id="nombreProy"><%= @project.name %></div>
       <div class="contProy"> Capacidad del proyecto:</div>
       <div class="descProy"><%= @project.max_capacity %> personas</div>
+      <div class="contProy"> Dueño del proyecto:</div>
+      <div class="descProy"><%= @project.user.name %></div>
       <div class="contProy"> Descripcion del proyecto:</div>
       <div class="descProy"><%= @project.description %></div>
       <div class="contProy"> Fecha de inicio del Proyecto:</div>

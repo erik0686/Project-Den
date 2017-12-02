@@ -6,6 +6,7 @@
   <div class="signin-container align-flex">
     <div class="text-left">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
         <div class="align-flex signin-container">
           <div class="field">
             <%= f.text_field :email, autofocus: true, class: "input-field", placeholder:"Correo" %>
